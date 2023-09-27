@@ -20,6 +20,25 @@ nav.navbar.navbar-default.no-background.inc-border.bootsnav {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.hide-logo .logo {
+    display: none !important;
+}
+
+.hide-logo nav.navbar.bootsnav {
+    height: 60px !important;
+}
+
+.hide-logo nav.navbar.bootsnav .navbar-nav > li > a {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.navbar {
+    transition: height 0.3s ease;
+}
+
 nav.bootsnav .megamenu-content .title {
   color: #333333;
   font-weight: 600;
@@ -48,7 +67,7 @@ nav.navbar.navbar-default.bootsnav.brand-top .navbar-header {
 nav.navbar.navbar-default.bootsnav.brand-top .navbar-header .navbar-brand {
     display: inline-block;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 0;
     float: none;
 }
 
@@ -1344,6 +1363,10 @@ nav.navbar.bootsnav {
     width: 100%;
     text-align: center;
   }
+  
+  .center-text {
+    text-align: center;
+  }
 
   nav.bootsnav.navbar-brand-top ul.nav > li.dropdown > ul.dropdown-menu {
     margin-top: 0px;
@@ -1755,7 +1778,8 @@ nav.navbar.bootsnav {
 
   .top-bar-area .logo {
     display: none;
-
+    width: 150px; /* Adjust this value as needed */
+    height: auto; /* This will maintain the aspect ratio */
   }
 
   .top-bar-area.shadow::after {
@@ -2472,7 +2496,8 @@ ul.cart-list > li.total > .btn {
   }
 
   nav.navbar .navbar-brand img.logo {
-    height: 200px;
+    width: 150px; /* Adjust this value as needed */
+    height: 150px; /* This will maintain the aspect ratio */
   }
 
   .attr-nav > ul > li > a {
